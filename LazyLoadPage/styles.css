@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: poppins;
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header{
+  position: fixed;
+  top: 0;
+  color: rgba(0, 0, 0, 0.05);
+  font-weight: 800;
+  font-size: 15vw;
+  z-index: -1;
+  font-style: italic;
+  /* margin-top: -120px; */
+}
+
+.main-section{
+  max-width: 1200px;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 22vw;
+  grid-gap: 40px;
+  padding: 2vw 10vw;
+  z-index: 10;
+  padding-top: 20vw;
+}
+
+.section-card{
+  width: 100%;
+  aspect-ratio: 3/3.5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(247, 247, 247);
+  z-index: 20;
+  border: 2px solid rgba(0, 0, 0, 0.01);
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+}
+
+.image-container{
+  width: 100%;
+  height: 70%;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-img{
+  width: 47%;
+  height: 80%;
+  mix-blend-mode: multiply;
+}
+
+.details{
+  width: 100%;
+  height: 30%;
+  max-height: 30%;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+.title{
+  font-size: 0.8rem;
+  font-weight: 600;
+  overflow: hidden;
+  height: 60%;
+}
+
+.price{
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  background-color: rgb(255, 255, 255);
+  align-self: flex-end;
+  width: 30%;
+  text-align: end;
+}
+
+.loading{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+@media only screen and (max-width: 800px) {
+  .main-section{
+    width: 100%;
+  }
+
+  .main-section{
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 30vw;
+    grid-gap: 20px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+
+  .main-section{
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 45vw;
+    grid-gap: 20px;
+  }
+}
