@@ -64,8 +64,9 @@ body{
 }
 
 .product-img{
-  width: 47%;
-  height: 80%;
+  max-width: 47%;
+  max-height: 80%;
+  aspect-ratio: auto;
   mix-blend-mode: multiply;
 }
 
