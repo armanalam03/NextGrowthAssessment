@@ -21,7 +21,7 @@ const loadCard = async() => {
         sectionCard.classList.add('section-card');
         sectionCard.innerHTML = `
           <section class="image-container">
-            <img src="${item.image}" class="product-img" alt="${item.title}">
+            <img src="${item.image}" srcset="${item.image} 70w" class="product-img" alt="${item.title}">
           </section>
           <section class="details">
             <span class="title">${item.title}</span>
