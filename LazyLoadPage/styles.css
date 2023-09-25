@@ -65,6 +65,7 @@ body{
 
 .product-img{
   width: 47%;
+  aspect-ratio: auto;
   mix-blend-mode: multiply;
 }
 
